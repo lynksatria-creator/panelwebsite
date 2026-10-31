@@ -1,0 +1,288 @@
+{
+  "brand": {
+    "name": "Setia Digital Creative",
+    "tagline": "Undangan Digital Eksklusif & Momen Abadi",
+    "ethos": "Menggabungkan seni estetika pernikahan tradisional & modern dengan teknologi interaktif kelas dunia.",
+    "language": "Bahasa Indonesia",
+    "svg_logo_mark": {
+      "concept": "Huruf 'S' Setia yang saling tertaut membentuk pita cincin pernikahan dan lambang keabadian (infinity loop), berbalut emas rose gold.",
+      "svg_code": "<svg viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg' class='w-10 h-10'><path d='M30 65C22 55 22 40 35 30C48 20 62 25 65 35C68 45 52 52 48 58C44 64 32 75 48 82C64 89 78 72 70 58' stroke='currentColor' stroke-width='4.5' stroke-linecap='round'/><circle cx='50' cy='50' r='42' stroke='currentColor' stroke-width='1.5' stroke-dasharray='4 4' opacity='0.5'/></svg>"
+    }
+  },
+  "theme": {
+    "style": "Elegant & Romantic fused with Modern & Professional (Awwwards SOTD aesthetic)",
+    "css_variables": {
+      "light": {
+        "--background": "38 35% 96%",
+        "--foreground": "20 20% 12%",
+        "--card": "36 30% 98%",
+        "--card-foreground": "20 20% 12%",
+        "--popover": "36 30% 98%",
+        "--popover-foreground": "20 20% 12%",
+        "--primary": "16 45% 28%",
+        "--primary-foreground": "38 35% 98%",
+        "--secondary": "34 30% 90%",
+        "--secondary-foreground": "20 20% 15%",
+        "--muted": "34 20% 92%",
+        "--muted-foreground": "20 10% 45%",
+        "--accent": "38 60% 88%",
+        "--accent-foreground": "16 50% 20%",
+        "--destructive": "0 70% 50%",
+        "--destructive-foreground": "0 0% 98%",
+        "--border": "34 25% 85%",
+        "--input": "34 25% 85%",
+        "--ring": "16 45% 28%",
+        "--gold": "38 65% 55%",
+        "--gold-glow": "38 80% 65%",
+        "--radius": "0.75rem"
+      },
+      "dark": {
+        "--background": "20 18% 8%",
+        "--foreground": "38 30% 92%",
+        "--card": "20 15% 12%",
+        "--card-foreground": "38 30% 92%",
+        "--popover": "20 15% 12%",
+        "--popover-foreground": "38 30% 92%",
+        "--primary": "38 60% 75%",
+        "--primary-foreground": "20 25% 10%",
+        "--secondary": "20 12% 18%",
+        "--secondary-foreground": "38 30% 92%",
+        "--muted": "20 10% 18%",
+        "--muted-foreground": "38 15% 65%",
+        "--accent": "16 35% 22%",
+        "--accent-foreground": "38 60% 85%",
+        "--destructive": "0 62% 30%",
+        "--destructive-foreground": "0 0% 98%",
+        "--border": "20 12% 20%",
+        "--input": "20 12% 20%",
+        "--ring": "38 60% 75%",
+        "--gold": "38 65% 55%",
+        "--gold-glow": "38 80% 65%"
+      }
+    },
+    "custom_palette_hex": {
+      "champagne_ivory": "#FAF7F2",
+      "velvet_burgundy": "#4A1E1B",
+      "rose_gold_accent": "#D4A373",
+      "deep_sage": "#3A4A3F",
+      "soft_blush": "#F3E9E3",
+      "dark_charcoal": "#1A1817"
+    }
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, Playfair Display, serif",
+    "body_font": "Plus Jakarta Sans, Outfit, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap",
+    "rules": {
+      "H1": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight leading-[1.1]",
+      "H2": "text-3xl sm:text-4xl lg:text-5xl font-serif tracking-tight leading-tight",
+      "H3": "text-xl sm:text-2xl font-serif leading-snug",
+      "Subheading": "text-sm uppercase tracking-[0.25em] font-sans font-semibold text-amber-800/80 dark:text-amber-300/80",
+      "Body": "text-base leading-relaxed font-sans text-muted-foreground"
+    }
+  },
+  "layout_and_sections": [
+    {
+      "section_id": "header",
+      "type": "Navigation Bar",
+      "specs": "Sticky top-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/50 transition-all duration-300",
+      "elements": [
+        "Brand Logo (SVG Mark) + 'SETIA DIGITAL'",
+        "Nav Links: Tentang, Layanan, Portofolio, Harga, Kontak",
+        "Language indicator: ID (Bahasa Indonesia)",
+        "CTA Button: 'Konsultasi Gratis' (WhatsApp dynamic link) with data-testid='nav-cta-button'",
+        "Theme Toggle Button (Light/Dark mode switch) with data-testid='theme-toggle-button'"
+      ]
+    },
+    {
+      "section_id": "hero",
+      "type": "Kinetic Hero with Text Reveal & Parallax Framing",
+      "specs": "Min-h-[90vh] relative overflow-hidden flex items-center justify-center pt-24 pb-16 px-4 sm:px-8",
+      "design_details": {
+        "text_reveal": "Framer Motion line-by-line staggered mask reveal for main title: 'Undangan Digital Cerdas, Anggun & Tak Terhalang Waktu.'",
+        "subheading": "Mengabadikan setiap detik cerita cinta Anda dalam mahakarya visual interaktif berstandar internasional.",
+        "interactive_card_3d": "Floating interactive 3D tilted invitation card mock with parallax tilt on mouse move, featuring real wedding photo, wax seal effect, gold leaf border, and live RSVP preview button.",
+        "ctas": [
+          "Primary: 'Lihat Portofolio' -> scrolls to #portfolio (data-testid='hero-portfolio-cta')",
+          "Secondary: 'Buat Undangan Sekarang' -> opens WhatsApp (data-testid='hero-whatsapp-cta')"
+        ]
+      }
+    },
+    {
+      "section_id": "marquee",
+      "type": "Editorial Luxury Ribbon",
+      "specs": "Py-6 bg-primary text-primary-foreground overflow-hidden whitespace-nowrap rotate-[-1deg] my-8 shadow-xl",
+      "content": "Elegansi Digital • Konfirmasi RSVP Real-Time • Amplop Digital & QRIS • Peta Lokasi Google Maps • Galeri Foto & Musik Tanpa Batas • Buku Tamu Digital • Video Cinematic Header"
+    },
+    {
+      "section_id": "tentang-kami",
+      "type": "Storytelling & Craftsmanship",
+      "specs": "Py-20 lg:py-32 px-4 sm:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center",
+      "content_guidance": "Ceritakan bagaimana Setia Digital Creative lahir dari pemahaman mendalam tentang sakralnya pernikahan di Indonesia. Menggabungkan unsur adat budaya lokal (Jawa, Sunda, Minang, Bali, Bugis, Modern) dengan estetika UI/UX terkini."
+    },
+    {
+      "section_id": "layanan",
+      "type": "Asymmetric Bento Grid (Mode A Tetris Grid)",
+      "specs": "Py-20 lg:py-32 px-4 sm:px-8 max-w-7xl mx-auto",
+      "grid_layout": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 lg:gap-8",
+      "bento_cards": [
+        {
+          "col_span": "col-span-full md:col-span-8 row-span-2",
+          "title": "RSVP & Manajemen Tamu Cerdas",
+          "desc": "Sistem konfirmasi kehadiran otomatis terintegrasi dengan WhatsApp, pembuatan QR Code check-in eksklusif untuk penerima tamu di venue.",
+          "badge": "Fitur Unggulan"
+        },
+        {
+          "col_span": "col-span-full md:col-span-4 row-span-1",
+          "title": "Amplop Digital & Gift Registry",
+          "desc": "Transfer bank langsung, QRIS instan, dan pengiriman hadiah fisik terverifikasi aman & tanpa potongan."
+        },
+        {
+          "col_span": "col-span-full md:col-span-4 row-span-1",
+          "title": "Navigasi & Peta Presisi",
+          "desc": "Integrasi Google Maps & Waze dengan petunjuk rute interaktif untuk kenyamanan seluruh undangan."
+        },
+        {
+          "col_span": "col-span-full md:col-span-6 row-span-1",
+          "title": "Galeri Sinematik & Audio Kustom",
+          "desc": "Pemutar musik lagu latar pilhan pasangan, slide foto resolusi tinggi, dan video trailer pra-nikah."
+        },
+        {
+          "col_span": "col-span-full md:col-span-6 row-span-1",
+          "title": "Integrasi Live Streaming & Hibrida",
+          "desc": "Sematkan tayangan langsung YouTube/Zoom untuk kerabat yang tidak dapat hadir secara fisik."
+        }
+      ]
+    },
+    {
+      "section_id": "portfolio",
+      "type": "Interactive Design Showcase (Spotlight & Clipped Frames)",
+      "specs": "Py-20 lg:py-32 px-4 sm:px-8 max-w-7xl mx-auto",
+      "features": [
+        "Filter kategori: Semua, Adat Nusantara, Minimalis Modern, Royal Floral, Botanical Luxe",
+        "Spotlight Card hover effects: Zoom in, glassmorphic badge, preview live demo modal with full smartphone frame emulator",
+        "Interactive Preview Drawer/Modal (data-testid='portfolio-preview-modal') showing real sample invitation view"
+      ]
+    },
+    {
+      "section_id": "harga-paket",
+      "type": "Pricing Cards with Toggle & Comparison",
+      "specs": "Py-20 lg:py-32 px-4 sm:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8",
+      "packages": [
+        {
+          "name": "Paket Essential",
+          "price": "Rp 299.000",
+          "popular": false,
+          "features": ["Masa Aktif 6 Bulan", "Galeri 10 Foto", "RSVP via WhatsApp", "Musik Latar Standar", "Peta Lokasi Interaktif"]
+        },
+        {
+          "name": "Paket Premium Royal",
+          "price": "Rp 499.000",
+          "popular": true,
+          "features": ["Masa Aktif Selamanya", "Galeri Foto & Video Tanpa Batas", "Amplop Digital & QRIS", "Buku Tamu & Ucapan Real-Time", "QR Code Check-in Tamu", "Custom Musik & Font"]
+        },
+        {
+          "name": "Paket Bespoke Couture",
+          "price": "Rp 899.000",
+          "popular": false,
+          "features": ["Desain kustom 100% dari nol", "Domain Kustom (misal: romeodanjuliet.com)", "Animasi Ilustrasi Khusus Pasangan", "Dukungan Integrasi Live Stream", "VIP Concierge Support"]
+        }
+      ]
+    },
+    {
+      "section_id": "kontak",
+      "type": "Interactive Inquiry & WhatsApp Direct Call-to-Action",
+      "specs": "Py-20 lg:py-32 px-4 sm:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12",
+      "components": [
+        "Formulir Konsultasi (Nama, No WhatsApp, Tanggal Pernikahan, Konsep Impian) dengan data-testid='contact-form'",
+        "Estimator Biaya Instan Interaktif",
+        "Tombol WhatsApp Langsung dengan data-testid='whatsapp-direct-btn'"
+      ]
+    },
+    {
+      "section_id": "footer",
+      "type": "Editorial Grand Finale Footer",
+      "specs": "Bg-card border-t border-border/60 pt-20 pb-12 px-4 sm:px-8 text-center sm:text-left",
+      "elements": [
+        "Massive Typography Brand Title 'SETIA DIGITAL CREATIVE'",
+        "Navigasi Cepat, Media Sosial (Instagram, TikTok, YouTube, Pinterest)",
+        "Informasi Studio: Jakarta & Bandung, Indonesia",
+        "Hak Cipta © 2026 Setia Digital Creative. All rights reserved."
+      ]
+    }
+  ],
+  "image_urls": {
+    "hero_invitation_mockup": "https://images.unsplash.com/photo-1648656433573-ab565ff450c0?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "hero_wedding_couple": "https://images.unsplash.com/photo-1626113850818-c54696645fe4?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "about_artisanal_paper": "https://images.unsplash.com/photo-1592347093417-0e95eb5851aa?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "portfolio_items": [
+      {
+        "id": "theme-1",
+        "title": "Aura Nusantara - Javanese Royal Elegance",
+        "category": "Adat Nusantara",
+        "image": "https://images.unsplash.com/photo-1626113850818-c54696645fe4?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "demo_couple": "Anindya & Raden",
+        "date": "24 November 2026"
+      },
+      {
+        "id": "theme-2",
+        "title": "Blossom & Grace - Botanical Champagne",
+        "category": "Botanical Luxe",
+        "image": "https://images.unsplash.com/photo-1648656433394-6f488f55c561?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "demo_couple": "Clarissa & Julian",
+        "date": "18 Desember 2026"
+      },
+      {
+        "id": "theme-3",
+        "title": "Minimal Noir - Urban Contemporary",
+        "category": "Minimalis Modern",
+        "image": "https://images.unsplash.com/photo-1510181414401-d3f2aa71a124?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "demo_couple": "Siti & Farhan",
+        "date": "10 Januari 2027"
+      },
+      {
+        "id": "theme-4",
+        "title": "Celestial Sunset - Bali Cliffside Romance",
+        "category": "Royal Floral",
+        "image": "https://images.unsplash.com/photo-1731248271505-269fe1b06f27?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "demo_couple": "Devi & Bramantyo",
+        "date": "14 Februari 2027"
+      }
+    ]
+  },
+  "motion_specs": {
+    "lenis_scroll": "Implement Smooth Lenis Scrolling for weighted momentum",
+    "framer_motion": {
+      "stagger_children": 0.1,
+      "fade_up_variant": {
+        "initial": { "opacity": 0, "y": 30 },
+        "animate": { "opacity": 1, "y": 0, "transition": { "duration": 0.7, "ease": [0.22, 1, 0.36, 1] } }
+      },
+      "text_reveal_variant": {
+        "hidden": { "y": "100%", "opacity": 0 },
+        "visible": { "y": "0%", "opacity": 1, "transition": { "duration": 0.8, "ease": [0.16, 1, 0.3, 1] } }
+      }
+    }
+  },
+  "testing_attributes": {
+    "rule": "Every interactive element (buttons, tabs, inputs, cards, links, modals) MUST have descriptive data-testid attributes in kebab-case.",
+    "examples": [
+      "data-testid='nav-link-layanan'",
+      "data-testid='hero-whatsapp-cta'",
+      "data-testid='portfolio-filter-adat'",
+      "data-testid='portfolio-card-preview-button'",
+      "data-testid='package-order-button-premium'",
+      "data-testid='contact-submit-button'"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Load Google Fonts URL provided in design_guidelines.json into public/index.html or index.css",
+    "Ensure all copy is fluently written in Bahasa Indonesia with romantic & professional wedding tone",
+    "Use Lenis scroll library (or smooth CSS scroll fallback) for premium momentum scrolling",
+    "Implement light and dark mode state cleanly using CSS variables",
+    "Make sure all interactive elements contain data-testid attributes",
+    "Use Lucide-react or Radix icons for clean visual cues",
+    "Add toast notification on form submit / copy links via Sonner toast component"
+  ]
+}
